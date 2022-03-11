@@ -8,7 +8,7 @@ ${url}      https://www.google.com/
 TempTestCase
     Open Browser     ${url}    ${Browser}
     Sleep   5
-    close all browsers
+    close browser
 
 *** Keywords ***
 
