@@ -1,60 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220311 15:14:32.899" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220311 17:11:46.430" rpa="false" schemaversion="2">
 <suite id="s1" name="Temp" source="C:\Users\user\PycharmProjects\RobotFramework-Mentorship\Testcases\temp.robot">
-<test id="s1-t1" name="Login">
-<kw name="Open Kuvera Website">
+<test id="s1-t1" name="testCase_01 Login into Kuvera website">
+<kw name="Open the browser">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220311 15:14:33.303" level="INFO">Opening browser 'Firefox' to base url 'https://www.kuvera.in/'.</msg>
-<msg timestamp="20220311 15:14:33.305" level="INFO">Firefox driver log is always forced to to: C:\Users\user\PycharmProjects\RobotFramework-Mentorship\geckodriver-5.log</msg>
-<status status="PASS" starttime="20220311 15:14:33.303" endtime="20220311 15:14:42.836"/>
-</kw>
-<status status="PASS" starttime="20220311 15:14:33.302" endtime="20220311 15:14:42.836"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220311 15:14:44.843" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220311 15:14:42.838" endtime="20220311 15:14:44.843"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://*[@class='button-primary b-regulatory-disclosure__btn']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220311 15:14:44.857" level="INFO">Clicking element 'xpath://*[@class='button-primary b-regulatory-disclosure__btn']'.</msg>
-<msg timestamp="20220311 15:14:45.027" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220311 15:14:45.080" level="FAIL">ElementClickInterceptedException: Message: Element &lt;button id="" class="button-primary b-regulatory-disclosure__btn"&gt; is not clickable at point (682,496) because another element &lt;div class="b-waiting-overlay__content"&gt; obscures it
-Stacktrace:
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:183:5
-ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.jsm:282:5
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:166:11
-interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:11
-clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:203:24
-receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:91:31
+<msg timestamp="20220311 17:11:46.932" level="INFO">Opening browser 'InternetExplorer' to base url 'https://www.Kuvera.in/'.</msg>
+<msg timestamp="20220311 17:11:46.952" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220311 17:11:46.956" level="FAIL">WebDriverException: Message: 'IEDriverServer.exe' executable needs to be in PATH. Please download from https://www.selenium.dev/downloads/ and read up at https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver
 </msg>
-<status status="FAIL" starttime="20220311 15:14:44.857" endtime="20220311 15:14:45.080"/>
+<status status="FAIL" starttime="20220311 17:11:46.932" endtime="20220311 17:11:46.956"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
+<arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220311 15:14:45.083" endtime="20220311 15:14:45.083"/>
+<status status="NOT RUN" starttime="20220311 17:11:46.956" endtime="20220311 17:11:46.956"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20220311 15:14:45.083" endtime="20220311 15:14:45.084"/>
+<status status="FAIL" starttime="20220311 17:11:46.931" endtime="20220311 17:11:46.957"/>
 </kw>
-<status status="FAIL" starttime="20220311 15:14:33.302" endtime="20220311 15:14:45.084">ElementClickInterceptedException: Message: Element &lt;button id="" class="button-primary b-regulatory-disclosure__btn"&gt; is not clickable at point (682,496) because another element &lt;div class="b-waiting-overlay__content"&gt; obscures it
-Stacktrace:
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:183:5
-ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.jsm:282:5
-webdriverClickElement@chrome://remote/content/marionette/interaction.js:166:11
-interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:11
-clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:203:24
-receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:91:31
+<kw name="Enter Login Details">
+<status status="NOT RUN" starttime="20220311 17:11:46.958" endtime="20220311 17:11:46.958"/>
+</kw>
+<kw name="click on login Button">
+<status status="NOT RUN" starttime="20220311 17:11:46.959" endtime="20220311 17:11:46.959"/>
+</kw>
+<status status="FAIL" starttime="20220311 17:11:46.930" endtime="20220311 17:11:46.960">WebDriverException: Message: 'IEDriverServer.exe' executable needs to be in PATH. Please download from https://www.selenium.dev/downloads/ and read up at https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver
 </status>
 </test>
-<status status="FAIL" starttime="20220311 15:14:32.902" endtime="20220311 15:14:45.088"/>
+<status status="FAIL" starttime="20220311 17:11:46.433" endtime="20220311 17:11:46.962"/>
 </suite>
 <statistics>
 <total>
